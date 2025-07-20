@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAATH Charitable Trust </title>
+    <link rel="stylesheet" href="Donate.css"/>
+    <link rel="stylesheet" href="responsive-nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Top mail Strip -->
+    <div class="top-strip" id="top-strip">
+    <div class="container top-right">
+      <p>Call Us On: 091-35103148 | Email Us On: saath1388@gmail.com</p>
+    </div>
+  </div>
+
+    <!-- Sticky White Navbar -->
+     <header class="main-navbar">
+    <div class="container navbar-content">
+      <div class="logo">
+        <h1> <i class="fa-solid fa-hands-holding-child"></i>SAATH</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <!-- Our Work Dropdown -->
+        <div class="dropdown">
+          <a href="#">Our Work <i class="fa-solid fa-angle-down"></i> </a>
+          <div class="dropdown-content">
+            <a href="livelihood.html"> <i class="fa-solid fa-hand-holding-heart"></i> Livelihood</a>
+            <a href="education.html"> <i class="fa-solid fa-user-graduate"></i> Education</a>
+            <a href="#"> <i class="fa-solid fa-briefcase-medical"></i> Health-Care</a>
+            <a href="#"><i class="fa-solid fa-dollar-sign"></i> Finance</a>
+          </div>
+        </div>
+        <a href="impact.html">Impact</a>
+        <!-- Resources Dropdown -->
+        <div class="dropdown">
+          <a href="#">Resources <i class="fa-solid fa-angle-down"></i> </a>
+          <div class="dropdown-content">
+            <a href="#">Anual Reports</a>
+            <a href="#"><i class="fa-solid fa-person-walking"></i> Publications</a>
+          </div>
+        </div>
+
+        <a href="involved.html">Get Involved</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="Donate.html" class="active"><button class="donate-btn" id="btn">Donate Now</button></a>
+      </nav>
+      <!-- Hamburger -->
+      <div class="hamburger" id="hamburger">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+    <!-- Donate section -->
+    <section class="donation-section">
+        <div class="donation-grid">
+            <div class="donation-left">
+                <h2>With the support of donors like YOU,<br> we have transformed countless lives :</h2>
+                <div class="image-grid">
+                    <img src="img/Donate/d-1.png" alt="Image 1" />
+                    <img src="img/Donate/d-2.png" alt="Image 2" />
+                    <img src="img/Donate/d-3.png" alt="Image 3" />
+                    <img src="img/Donate/d-4.png" alt="Image 4" />
+                    <img src="img/Donate/d-5.png" alt="Image 5" />
+                    <img src="img/Donate/d-6.png" alt="Image 6" />
+                </div>
+            </div>
+            <div class="donation-right">
+                <div class="tab-buttons">
+                    <button id="indianBtn" class="active">Indian</button>
+                    <button id="foreignBtn">Foreign</button>
+                </div>
+
+                <!-- Indian Donor Form -->
+                <div id="indianForm" class="donor-form active-form">
+                    <h3>Indian Donor</h3>
+                    <label for="indian-payment">Payment Options:</label>
+                    <select id="indian-payment">
+                        <option>Bank Deposit</option>
+                        <option>UPI</option>
+                        <option>Credit/Debit Card</option>
+                    </select>
+                    <button class="donate-btn">Donate</button>
+                    <p class="note">
+                        Tax Benefits for Indian Donor<br><br>
+                        All donations to SAATH are eligible for a 50% tax exemption under Section 80G of the Income Tax
+                        Act, 1961...
+                    </p>
+                </div>
+
+                <!-- Foreign Donor Form -->
+                <div id="foreignForm" class="donor-form">
+                    <h3>Foreign Donor</h3>
+                    <label for="foreign-payment">Payment Options:</label>
+                    <select id="foreign-payment">
+                        <option>PayPal</option>
+                        <option>Credit Card</option>
+                        <option>International Wire</option>
+                    </select>
+                    <button class="donate-btn">Donate</button>
+                    <p class="note">
+                        Thank you for supporting us globally. Your donation helps reach more lives and create a
+                        sustainable impact.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COUNTER SECTION -->
+    <section class="stats-section">
+        <div class="stat-box">
+            <h3><span class="counter" data-target="28800">0</span>+</h3>
+            <p>Integrated Slum Development</p>
+            <h6>households transformed</h6>
+        </div>
+        <div class="stat-box">
+            <h3><span class="counter" data-target="83300">0</span>+</h3>
+            <p>Health</p>
+            <h6>individuals reached through health initiatives</h6>
+        </div>
+        <div class="stat-box">
+            <h3><span class="counter" data-target="78000">0</span>+</h3>
+            <p>Livelihoods</p>
+            <h6>youth and micro-entrepreneurs supported</h6>
+        </div>
+        <div class="stat-box">
+            <h3><span class="counter" data-target="16300">0</span>+</h3>
+            <p>Education</p>
+            <h6>children supported</h6>
+        </div>
+    </section>
+    <!-- Impact Dairies Section -->
+    <section class="impact-section">
+        <div class="impact-container">
+            <div class="impact-left">
+                <img src="img/impact/manish.png" alt="Impact Image" />
+                <div class="impact-desc">
+                    <h3>Manisha’s Journey</h3>
+                    <p>When Manisha first heard about the Child-Friendly Space (CFS) centre... <br><br>
+                        Originally from a small tribal village in Chhota Udepur, Gujarat, Manisha...</p><br><br>
+                    <p>Originally from a small tribal village in Chhota Udepur, Gujarat, Manisha had completed her
+                        education till the 12th grade. Due to limited job opportunities in her hometown, she and her
+                        husband migrated to Ahmedabad in 2019 to work as daily-wage labourers at the Rajyash
+                        construction site. From the beginning, Manisha stood out—strong, outspoken, and a determined
+                        voice for her community.</p>
+                </div>
+            </div>
+            <div class="impact-right">
+                <h2>Impact Diaries</h2>
+                <div class="diary-list">
+                    <ul class="diary-list-inner" id="diaryList">
+                        <li><strong>Bhikhubhai and Laxmiben</strong><br>From Slum Shadows to City Pride</li>
+                        <li><strong>Chanda’s Comeback</strong><br>From Illness and Homelessness to Homeownership</li>
+                        <li><strong>Manisha’s Leap</strong><br>From Unseen Domestic Worker to Empowered Home Manager
+                        </li>
+                        <li><strong>Amir’s Turnaround</strong></li>
+                        <li><strong>Rani’s Rise</strong><br>Escaped Child Marriage to Become a Teacher</li>
+                        <li><strong>Deepak’s Dream</strong><br>From Ragpicker to Role Model</li>
+                        <li><strong>Sita’s Stand</strong><br>Taking a Stand Against Abuse</li>
+                        <li><strong>Karan’s Climb</strong><br>From Construction Site to College</li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <!-- footer section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2 id="footer-logo"><i class="fa-solid fa-hands-holding-child"></i>SAATH</h2>
+                SAATH, founded in 1989 and based in Ahmedabad, Gujarat, is an Indian NGO registered as a Public
+                Charitable Trust.
+                </p>
+                <a href=""><button class="donate-btn">Donate Now</button></a>
+            </div>
+
+            <div class="footer-middle">
+                <h4>Our Work</h4>
+                <ul>
+                    <li>Livable Spaces</li>
+                    <li>Education</li>
+                    <li>Livelihood and Circular Economy</li>
+                    <li>Audited Accounts</li>
+                    <li>Healthcare</li>
+                    <li>Financial and Digital Literacy</li>
+                    <li>Climate Resilience</li>
+                    <li>FCRA Reports</li>
+                </ul>
+            </div>
+
+            <div class="footer-right">
+                <h4>Contact</h4>
+                 <p><i class="fas fa-map-marker-alt"></i> Saath Charitable Trust<br> Odisha , Nandanvan V, Nr. Prernatirth
+            Derasar, Jodhpur Tekra, Satellite, Ahmedabad - 380015, Gujarat, India.</p>
+          <p><i class="fas fa-envelope"></i>saath1388@gmail.com</p>
+          <p><i class="fas fa-phone"></i> 091-35103148</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-wordpress"></i></a>
+            </div>
+            <div class="bottom-links">
+                <a href="#">Contact us</a> /
+                <a href="#">Disclaimer</a> /
+                <a href="#">Privacy</a> /
+                <a href="#">Accessibility</a> /
+                <a href="#">Terms of Use</a> /
+                <a href="#">Sitemap</a> /
+                <a href="#">Partners</a> /
+                <a href="#">Technology</a> /
+                <a href="#">Q&A</a>
+            </div>
+            <p class="copyright">
+                &copy; 2025 Saath Charitable Trust. Website Design And Development By Mr. Rakesh Biswal
+            </p>
+        </div>
+    </footer>
+  <!-- Humburge js -->
+   <script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+    <script src="Donate.js"></script>
+</body>
+
+</html>
