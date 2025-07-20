@@ -614,3 +614,13 @@ body {
     max-width: 100%;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+.logo h1 {
+    font-size: 2rem;
+    padding: 8px;
+}
+}

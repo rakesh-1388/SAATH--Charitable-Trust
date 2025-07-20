@@ -735,10 +735,10 @@ color: #000000;
   .container {
     padding: 10px;
   }
-  .logo h1{
-    font-size: 1.8rem;
-   margin-top: 5px;
-  }
+.logo h1 {
+    font-size: 2rem;
+    padding: 8px;
+}
   .navbar-content {
     align-items: flex-start;
   }
