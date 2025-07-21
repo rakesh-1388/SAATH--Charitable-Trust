@@ -83,19 +83,20 @@
 
   <div class="contact-form-container">
     <h2>GET IN TOUCH</h2>
-    <form class="contact-form">
-      <div class="form-row">
-        <input type="text" placeholder="FIRST NAME *" required />
-        <input type="text" placeholder="LAST NAME *" required />
-      </div>
-      <div class="form-row">
-        <input type="tel" placeholder="PHONE NUMBER *" required />
-        <input type="email" placeholder="EMAIL ADDRESS *" required />
-      </div>
-      <input type="text" placeholder="SUBJECT *" required />
-      <textarea rows="5" placeholder="MESSAGE"></textarea>
-      <button type="submit">SUBMIT <i class="fas fa-arrow-right"></i></button>
-    </form>
+<form action="https://formspree.io/f/xnnzjrgl" method="post" class="contact-form">
+  <div class="form-row">
+    <input type="text" name="first_name" placeholder="FIRST NAME *" required />
+    <input type="text" name="last_name" placeholder="LAST NAME *" required />
+  </div>
+  <div class="form-row">
+    <input type="tel" name="phone" placeholder="PHONE NUMBER *" required />
+    <input type="email" name="email" placeholder="EMAIL ADDRESS *" required />
+  </div>
+  <input type="text" name="subject" placeholder="SUBJECT *" required />
+  <textarea name="message" rows="5" placeholder="MESSAGE"></textarea>
+  <button type="submit">SUBMIT <i class="fas fa-arrow-right"></i></button>
+</form>
+
   </div>
 </section>
 

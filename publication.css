@@ -317,12 +317,6 @@ body {
 .footer-bottom p {
   font-size: 15px;
 }
-
-
-
-
-
-
 /* Responsive */
 @media (max-width: 768px) {
   .publication-card {
@@ -343,4 +337,13 @@ body {
     font-size: 1.2rem;
     top: -20px;
   }
+}  
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+.logo h1 {
+    font-size: 2rem;
+    padding: 8px;
+}
 }
