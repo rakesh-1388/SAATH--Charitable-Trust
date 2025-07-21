@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+/* Top mail Strip */
+.top-strip {
+  background-color: #4a915b;
+  color: white;
+  font-size: 14px;
+  padding: 5px 0;
+  transition: top 0.3s ease;
+  position: relative;
+  z-index: 1000;
+}
+
+.top-right {
+  text-align: right;
+}
+
+/* Sticky White Navbar */
+.main-navbar {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo i{
+  margin-right: 10px;
+}
+
+.logo h1 {
+  height: 50px;
+  margin-right: 10px;
+  font-size: 2.8em;
+  letter-spacing: 1px;
+  color: #3dce75;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #444;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a.active{
+  color: #3dce75;
+  font-weight: bold;
+}
+
+/* Hover underline animation */
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #3dce75;
+  transition: width 0.3s ease;
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+.nav-links a:hover {
+  color:#4a915b;
+}
+
+/* Donate button */
+.donate-btn {
+  background: linear-gradient(to right, #11998e, #38ef7d);
+  color: white !important;
+  padding: 9px 17px;
+  border-radius: 20px;
+  cursor: pointer;
+   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+   border: none;
+   outline: none;
+   font-size: 18px;
+}
+.donate-btn:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+/* Dropdown styling */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
+  z-index: 1001;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  padding: 8px 20px;
+  color: black;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+.dropdown-content a:hover {
+ background: linear-gradient(to left, #11998e, #38ef7d);
+ color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+
+/* public section */
+.publication-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.publication-section h2 {
+  font-size: 2rem;
+  color: #3dce75;
+  margin-bottom: 2rem;
+}
+
+.publication-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.publication-card {
+  background-color: #fff;
+  color: #4a915b;
+  padding: 2rem 1.5rem 1.5rem;
+  border-radius: 5px;
+  position: relative;
+   transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px #4a915b;
+  cursor: pointer;
+}
+
+.publication-card:hover {
+  transform: translateY(-6px);
+}
+
+.publication-card .icon {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #4a915b;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.publication-card p {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+/* footer section */
+.footer-section {
+  background-color: #4a915b;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+  gap: 30px;
+}
+
+.footer-left, .footer-middle, .footer-right {
+  flex: 1 1 300px;
+}
+
+#footer-logo {
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+#footer-logo i{
+  margin-right: 8px;
+}
+
+.footer-left p {
+ 
+  line-height: 1.6;
+}
+
+.footer-section .donate-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-middle h4,
+.footer-right h4 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-middle ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-middle li {
+  margin-bottom: 5px; 
+}
+
+.footer-right p {
+  margin: 10px 0;
+}
+
+.footer-right i {
+  color: white;
+  margin-right: 8px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #353535;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.social-icons {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.social-icons i {
+  margin: 0 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #38ef7d;
+}
+
+.bottom-links {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.bottom-links a {
+    text-decoration: none;
+    margin: 0 4px;
+    color: white;
+    font-size: 15px;
+}
+.footer-bottom p {
+  font-size: 15px;
+}
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .publication-card {
+    padding: 1.5rem 1rem 1rem;
+  }
+
+  .publication-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .publication-card p {
+    font-size: 0.9rem;
+  }
+
+  .publication-card .icon {
+    font-size: 1.2rem;
+    top: -20px;
+  }
+}
